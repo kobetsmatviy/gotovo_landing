@@ -6,9 +6,111 @@ body {
     position: relative;
     margin: 0;
     height: 100%;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
     background-color: #fff;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    z-index: 10;
+
+    .header-box {
+        display: flex;
+        align-items: center;
+    }
+}
+.welcome {
+    position: relative;
+    padding: 120px 10px;
+    padding-top: 160px;
+    background: linear-gradient(96.89deg, #FFCEAB -2.67%, #FFF4E7 20.59%, #FFF4E7 79.62%, #FFCEAB 105.17%);
+    overflow: hidden;
+
+    .welcome-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 3;
+
+        .box-area {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .welcome-about {
+            margin: 40px 0;
+            margin-bottom: 50px;
+        }
+
+        .welcome-image {
+            position: absolute;
+            right: 0;
+            width: 450px;
+            z-index: -1;
+        }
+    }
+
+    .welcome-background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+.restaurant {
+    .restaurant-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 10px;
+    }
+}
+
+.wrap {
+    width: auto;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.title-large {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 0;
+}
+.title-middle {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+}
+.title-small {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.button {
+    padding: 12px 20px;
+    border-radius: 15px;
+    background: linear-gradient(153.09deg, #FFA149 -29.54%, #FB4A35 111.32%);
+    color: #fff;
+    font-size: 20px;
 }
 
 a {
@@ -19,8 +121,6 @@ a {
     color: #fff;
     background: #222;
 }
-
-
 
 @media (min-width: 862px) {
     
