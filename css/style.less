@@ -6,7 +6,7 @@ body {
     position: relative;
     margin: 0;
     height: 100%;
-    background-color: #fff;
+    background-color: #FFF;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
@@ -46,6 +46,7 @@ body {
         .welcome-about {
             margin: 40px 0;
             margin-bottom: 50px;
+            color: #3A322E;
         }
 
         .welcome-image {
@@ -72,6 +73,111 @@ body {
         justify-content: center;
         align-items: center;
         padding: 100px 10px;
+
+        .restaurant-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .restaurant-item {
+                position: relative;
+                margin: 30px 50px;
+
+                .restaurant-name {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+        .restaurant-about {
+            color: #3A322E;
+        }
+    }
+}
+.service {
+    .service-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        padding-bottom: 100px;
+
+        .service-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .service-item {
+                position: relative;
+                max-width: 300px;
+                margin: 30px 50px;
+                text-align: center;
+
+                .service-title {
+                    font-weight: 800;
+                    line-height: 0;
+                }
+                .service-description {
+                    color: #3A322E;
+                }
+            }
+        }
+        .service-about {
+            color: #3A322E;
+        }
+    }
+}
+.category {
+    position: relative;
+    padding: 80px 10px;
+    background: linear-gradient(96.89deg, #FFCEAB -2.67%, #FFF4E7 20.59%, #FFF4E7 79.62%, #FFCEAB 105.17%);
+    overflow: hidden;
+
+    .category-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+
+        .category-list {
+            display: flex;
+
+            .category-item {
+                display: flex;
+                align-items: center;
+                margin: 0 10px;
+                padding: 12px 20px;
+                border-radius: 30px;
+                background-color: #FFF;
+                box-shadow: 2px 0 8px 0 #1D0A0314;
+
+                .category-name {
+                    margin: 0;
+                    margin-left: 10px;
+                    color: #3A322E;
+                }
+            }
+        }
+        .category-about {
+            margin-top: 50px;
+            color: #3A322E;
+        }
+    }
+
+    .category-background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
     }
 }
 
@@ -110,7 +216,12 @@ body {
     border-radius: 15px;
     background: linear-gradient(153.09deg, #FFA149 -29.54%, #FB4A35 111.32%);
     color: #fff;
-    font-size: 20px;
+}
+.button-small {
+    padding: 8px 15px;
+    border-radius: 12px;
+    background: linear-gradient(153.09deg, #FFA149 -29.54%, #FB4A35 111.32%);
+    color: #fff;
 }
 
 a {
@@ -120,6 +231,10 @@ a {
 ::selection {
     color: #fff;
     background: #222;
+}
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 @media (min-width: 862px) {
