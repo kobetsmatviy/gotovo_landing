@@ -15,8 +15,9 @@ body {
 
 .header {
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 110px;
+    padding: 0 10px;
     z-index: 10;
 
     .header-box {
@@ -53,7 +54,29 @@ body {
             position: absolute;
             right: 0;
             width: 450px;
+            height: 450px;
+            margin-top: -30px;
             z-index: -1;
+
+            img {
+                height: auto;
+                z-index: 3;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: block;
+                width: 240px;
+                height: 240px;
+                background: #A54C0D;
+                opacity: 0.7;
+                z-index: 2;
+                filter: blur(42px);
+            }
         }
     }
 
@@ -63,10 +86,13 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
+        height: 100%;
         z-index: 1;
     }
 }
 .restaurant {
+    padding: 0 10px;
+
     .restaurant-box {
         display: flex;
         flex-direction: column;
@@ -99,6 +125,8 @@ body {
     }
 }
 .service {
+    padding: 0 10px;
+
     .service-box {
         display: flex;
         flex-direction: column;
@@ -182,6 +210,7 @@ body {
     }
 }
 .organization {
+    padding: 0 10px;
     background-color: #FFF;
 
     .organization-box {
@@ -265,10 +294,13 @@ body {
         bottom: 0;
         left: 0;
         right: 0;
+        height: 100%;
         z-index: 1;
     }
 }
 .benefit {
+    padding: 0 10px;
+
     .benefit-box {
         display: flex;
         flex-direction: column;
@@ -445,6 +477,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
+img {
+    pointer-events: none;
+}
 ::selection {
     color: #fff;
     background: #222;
@@ -454,6 +489,93 @@ ul {
     padding: 0;
 }
 
-@media (min-width: 862px) {
-    
+@media (max-width: 991px) {
+    .welcome {
+        padding-bottom: 50px;
+
+        .welcome-box {
+            .welcome-image {
+                position: relative;
+                margin: 50px 30px;
+                width: auto;
+                max-width: 350px;
+
+                &::before {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    .organization {
+        .organization-box {
+            .organization-list {
+                .organization-item {
+                    flex-direction: column;
+                    min-width: inherit;
+                    max-width: inherit;
+                    margin: 15px 0;
+
+                    .organization-image {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100px;
+                        margin: 0;
+                        margin-bottom: 15px;
+                    }
+                    .organization-name {
+                        margin: 0;
+                        font-weight: 800;
+                    }
+                    .organization-description {
+                        margin: 10px 0;
+                        color: #3A322E;
+                    }
+                }
+            }
+        }
+    }
+    .download {
+        padding-bottom: 50px;
+
+        .download-box {
+            .download-image {
+                position: static;
+                width: auto;
+                max-width: 500px;
+                margin-top: 50px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .footer {
+        .footer-box {
+            .footer-content {
+                flex-direction: column;
+                
+                .footer-logo {
+                    margin: 0;
+                    margin-top: 20px;
+                }
+                .footer-link {
+                    margin: 0;
+                    margin-top: 20px;
+                }
+                .footer-contact {
+                    margin: 0;
+                    margin-top: 20px;
+                }
+                .footer-download {
+                    margin-top: 20px;
+                }
+            }
+            .footer-copyright {
+                margin-top: 20px;
+            }
+        }
+    }
 }
