@@ -148,11 +148,12 @@ body {
 
         .category-list {
             display: flex;
+            flex-wrap: wrap;
 
             .category-item {
                 display: flex;
                 align-items: center;
-                margin: 0 10px;
+                margin: 10px;
                 padding: 12px 20px;
                 border-radius: 30px;
                 background-color: #FFF;
@@ -326,7 +327,6 @@ body {
             .faq-item {
                 margin: 20px 0;
                 padding: 15px 25px;
-                width: 100%;
                 background: #FFF;
                 border-radius: 15px;
                 box-shadow: 2px 4px 10px #22261d1a;
@@ -362,9 +362,13 @@ body {
             display: flex;
             justify-content: space-between;
             
+            .footer-logo {
+                margin-right: 20px;
+            }
             .footer-link {
                 display: flex;
                 flex-direction: column;
+                margin-right: 20px;
 
                 & > * {
                     margin: 10px 0;
@@ -373,6 +377,7 @@ body {
             .footer-contact {
                 display: flex;
                 flex-direction: column;
+                margin-right: 20px;
 
                 & > * {
                     margin: 10px 0;
@@ -401,11 +406,12 @@ body {
 }
 
 .title-large {
+    margin: 0;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 900;
     font-size: 60px;
-    line-height: 0;
+    line-height: 52px;
 }
 .title-middle {
     font-family: 'Nunito';
