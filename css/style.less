@@ -38,7 +38,7 @@ body {
         justify-content: center;
         z-index: 3;
 
-        .box-area {
+        .welcome-content {
             max-width: 600px;
             width: 100%;
         }
@@ -178,6 +178,217 @@ body {
         left: 0;
         right: 0;
         z-index: 1;
+    }
+}
+.organization {
+    background-color: #FFF;
+
+    .organization-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 130px 10px;
+
+        .organization-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .organization-item {
+                display: flex;
+                min-width: 450px;
+                max-width: 530px;
+                width: 100%;
+                margin: 15px;
+                padding: 15px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px 0 #4F381F40;
+
+                .organization-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 160px;
+                    height: 160px;
+                    margin-right: 15px;
+                    background: linear-gradient(153.09deg, #FFA149 -29.54%, #FB4A35 111.32%);
+                    border-radius: 12px;
+                }
+                .organization-name {
+                    margin: 0;
+                    font-weight: 800;
+                }
+                .organization-description {
+                    margin: 10px 0;
+                    color: #3A322E;
+                }
+            }
+        }
+    }
+}
+.download {
+    position: relative;
+    padding: 150px 10px;
+    padding-top: 200px;
+    background: linear-gradient(96.89deg, #FFCEAB -2.67%, #FFF4E7 20.59%, #FFF4E7 79.62%, #FFCEAB 105.17%);
+    overflow: hidden;
+
+    .download-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 3;
+
+        .download-content {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .download-about {
+            margin: 0;
+            margin-bottom: 50px;
+            color: #3A322E;
+        }
+
+        .download-image {
+            position: absolute;
+            right: 0;
+            width: 600px;
+            z-index: -1;
+        }
+    }
+
+    .download-background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+.benefit {
+    .benefit-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 10px;
+
+        .benefit-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .benefit-item {
+                position: relative;
+                max-width: 300px;
+                margin: 30px 50px;
+                text-align: center;
+
+                .benefit-image {
+                    display: block;
+                    width: 230px;
+                    height: 210px;
+                }
+                .benefit-title {
+                    font-weight: 800;
+                    line-height: 0;
+                }
+                .benefit-description {
+                    margin-bottom: 50px;
+                    color: #3A322E;
+                }
+            }
+        }
+        .benefit-about {
+            color: #3A322E;
+        }
+    }
+}
+.faq {
+    position: relative;
+    padding: 130px 10px;
+    background: linear-gradient(96.89deg, #FFCEAB -2.67%, #FFF4E7 20.59%, #FFF4E7 79.62%, #FFCEAB 105.17%);
+    overflow: hidden;
+
+    .faq-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 3;
+
+        .faq-list {
+            max-width: 750px;
+            width: 100%;
+
+            .faq-item {
+                margin: 20px 0;
+                padding: 15px 25px;
+                width: 100%;
+                background: #FFF;
+                border-radius: 15px;
+                box-shadow: 2px 4px 10px #22261d1a;
+
+                .faq-title {
+                    margin: 10px 0;
+                    color: #FD703F;
+                }
+                .faq-answer {
+                    margin: 10px 0;
+                    color: #3A322E;
+                }
+            }
+        }
+    }
+
+    .faq-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        z-index: 1;
+    }
+}
+.footer {
+    padding: 70px 10px;
+    background: #21201F;
+    color: #737373;
+
+    .footer-box {
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            
+            .footer-link {
+                display: flex;
+                flex-direction: column;
+
+                & > * {
+                    margin: 10px 0;
+                }
+            }
+            .footer-contact {
+                display: flex;
+                flex-direction: column;
+
+                & > * {
+                    margin: 10px 0;
+                }
+            }
+            .footer-download {
+                margin: 10px 0;
+            }
+
+            .footer-title {
+                color: #FFF;
+            }
+        }
+        .footer-copyright {
+            font-size: 12px;
+        }
     }
 }
 
