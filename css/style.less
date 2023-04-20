@@ -149,7 +149,6 @@ body {
 
                 .service-title {
                     font-weight: 800;
-                    line-height: 0;
                 }
                 .service-description {
                     color: #3A322E;
@@ -174,6 +173,10 @@ body {
         justify-content: center;
         align-items: center;
         z-index: 3;
+
+        h2 img {
+            vertical-align: bottom;
+        }
 
         .category-list {
             display: flex;
@@ -520,6 +523,20 @@ ul {
             }
         }
     }
+    .restaurant {
+        .restaurant-box {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    .category {
+        .category-box {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
     .organization {
         .organization-box {
             .organization-list {
@@ -554,6 +571,9 @@ ul {
         padding-bottom: 50px;
 
         .download-box {
+            .download-content {
+                text-align: center;
+            }
             .download-image {
                 position: static;
                 width: auto;
@@ -566,29 +586,42 @@ ul {
             }
         }
     }
+    .faq {
+        .faq-box {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
     .footer {
         .footer-box {
             .footer-content {
                 flex-direction: column;
+                align-items: center;
                 
                 .footer-logo {
                     margin: 0;
-                    margin-top: 20px;
+                    margin-top: 50px;
+                    order: -2;
                 }
                 .footer-link {
                     margin: 0;
-                    margin-top: 20px;
+                    margin-top: 50px;
+                    text-align: center;
                 }
                 .footer-contact {
                     margin: 0;
-                    margin-top: 20px;
+                    margin-top: 50px;
+                    text-align: center;
                 }
                 .footer-download {
-                    margin-top: 20px;
+                    margin-top: 50px;
+                    order: -1;
                 }
             }
             .footer-copyright {
-                margin-top: 20px;
+                margin-top: 50px;
+                text-align: center;
             }
         }
     }
